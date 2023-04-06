@@ -40,6 +40,13 @@ public class FibonacciIterative extends FibonacciBase {
         return nextFib;
     }
 
+    /**
+     * Kicks off the algorithm running / timing fiesta!
+     * Calls the {@code runAndTime()} method in base class which in turn calls implement here.
+     *
+     * @param num the algorithm arguments
+     * @return result containing factorial of n
+     */
     @Override
     public AlgorithmResult kickOff(AlgorithmArguments num) {
         return super.runAndTime(this, num);

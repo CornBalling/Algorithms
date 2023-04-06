@@ -12,11 +12,20 @@ import java.util.List;
  * This class' implement method returns a list of fibonacci numbers up to n.
  */
 public class FibonacciList extends Algorithm {
+    /**
+     * Constructs fibonacci list algorithm.
+     */
     public FibonacciList() {
         super("Fibonacci List");
     }
 
-    public List<BigInteger> implement(Integer n) {
+    /**
+     * Lists fibonacci numbers up to the nth.
+     *
+     * @param n number of fibonacci numbers wanted.
+     * @return
+     */
+    public List<BigInteger> implement(int n) {
         List<BigInteger> fibs = new ArrayList<>();
         if (n >= 1) {
             fibs.add(BigInteger.ZERO);
@@ -35,6 +44,13 @@ public class FibonacciList extends Algorithm {
         return fibs;
     }
 
+    /**
+     * Kicks off the algorithm running / timing fiesta!
+     * Validates input and calls the implement method here.
+     *
+     * @param num the algorithm arguments
+     * @return result containing factorial of n
+     */
     @Override
     public AlgorithmResult kickOff(AlgorithmArguments num) {
         int n = (int) num.getArguments().get(0);

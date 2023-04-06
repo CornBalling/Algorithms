@@ -14,11 +14,6 @@ public class Algorithm {
     }
 
     /**
-     * Delete this when done refactoring.
-     */
-    protected Algorithm() {}
-
-    /**
      * Verifies arguments, does any needed setup and calls a private method to carry
      * out the algorithm's logic.
      *
